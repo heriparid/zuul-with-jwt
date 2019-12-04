@@ -1,0 +1,9 @@
+zuul:
+  routes:
+    api-ip:
+      path: /api/**  #accessing by /api/ip.json
+      url: https://api.my-ip.io
+
+security:
+  jwt:
+    public-key: classpath:public.txt
